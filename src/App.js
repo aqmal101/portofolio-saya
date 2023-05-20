@@ -21,7 +21,7 @@ const PORTOFOLIO_DATA = {
 const MyPortofolio = () => {
   return (
     <div style={{minHeight: "100vh"}}>
-     <div 
+      <div 
         style={{height:'100vh', 
                  display:'flex', 
                  justifyContent:'center', 
@@ -30,15 +30,14 @@ const MyPortofolio = () => {
                  backgroundColor:'skyblue',
         }}
       >
-      <img src= {PORTOFOLIO_DATA.photo_profile}
-            style={{width: '6rem', height:'6rem'}}
-            alt="foto_profile"
+      <img 
+          src= {PORTOFOLIO_DATA.photo_profile}
+          style={{width: '6rem', height:'6rem'}}
+          alt="foto_profile"
       />    
 
       <h2>{PORTOFOLIO_DATA.nama_lengkap}</h2>
       <code>{PORTOFOLIO_DATA.pekerjaan}</code>
-
-
     </div>
 
     <div style={{height:'100vh',
@@ -102,6 +101,7 @@ const MyPortofolio = () => {
         <h4>ini kartu pokemon</h4>
         <p>Ini Deskripsi</p>
       </div>
+  );
 
 }
 export default MyPortofolio;
