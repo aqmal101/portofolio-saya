@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+body .halSaya details p{
+  padding: 5px;
+  border: 2px solid purple;
+}
+
+body .halSaya details summary{
+  list-style: none;
+  font-weight: 700;
+}
+
+.body .halSaya details summary:hover{
+  cursor: pointer;
+}
+
+.body .halSaya details summary::before{
+  content:" > "; 
+  color: purple; 
+}
+
+.body .halSaya details[open] summary::before{
+  content:" ^ "; 
+  color: purple; 
+}
+
+.card:hover::-ms-reveal{
+  cursor: pointer;
+  scale: 1.1;
+}
